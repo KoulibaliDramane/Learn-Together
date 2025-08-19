@@ -24,14 +24,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             LearnTogetherTheme {
-                LearnTogether(message = "bonjour", from = "koulibali")
+                LearnTogether()
             }
         }
     }
 }
 
 @Composable
-fun  LearnTogether(message: String, from: String, modifier: Modifier = Modifier) {
+fun  LearnTogether(modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.bg_compose_background)
     Column (
         verticalArrangement = Arrangement.Center,
